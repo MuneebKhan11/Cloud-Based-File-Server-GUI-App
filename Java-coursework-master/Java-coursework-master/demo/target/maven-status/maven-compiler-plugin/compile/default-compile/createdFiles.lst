@@ -1,0 +1,13 @@
+com/example/demo/DBConnection.class
+com/example/demo/SignInController.class
+com/example/demo/SceneController.class
+com/example/demo/HelloApplication.class
+com/example/demo/UpdateDetailsController.class
+com/example/demo/Terminal.class
+com/example/demo/CreateNewFileController.class
+com/example/demo/CreatePage.class
+com/example/demo/SignIn.class
+com/example/demo/DeletePage.class
+com/example/demo/UploadedFilesController.class
+com/example/demo/UpdatePage.class
+com/example/demo/recover.class

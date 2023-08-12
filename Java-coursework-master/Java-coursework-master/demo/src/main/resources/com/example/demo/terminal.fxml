@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="850.0" style="-fx-background-color: #DEF2F1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Terminal">
+   <children>
+      <Label layoutX="325.0" layoutY="23.0" prefHeight="121.0" prefWidth="200.0" text="Terminal">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <TextField id="terminalTextField" fx:id="terminalTextField" layoutX="231.0" layoutY="200.0" onAction="#handleTerminalInput" prefHeight="63.0" prefWidth="389.0" />
+      <TextArea id="terminalOutput" fx:id="terminalOutput" layoutX="201.0" layoutY="382.0" prefHeight="266.0" prefWidth="430.0" />
+      <Label layoutX="357.0" layoutY="144.0" text="Input terminal Code" />
+      <Label layoutX="368.0" layoutY="295.0" text="Terminal Output" />
+      <Button layoutX="69.0" layoutY="94.0" mnemonicParsing="false" onAction="#createScene" prefHeight="50.0" prefWidth="90.0" text="Back" />
+   </children>
+</AnchorPane>

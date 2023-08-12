@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  module:
+    image: pedrombmachado/ntu_lubuntu:arm64v8_comp20081
+
+
+
+  encrypted-storage:
+    build: ./encrypted-storage
+    ports:
+      - "2222:22"
+    environment:
+      - SSH_PASSWORD=ntu-user
+    command: sh -c "service ssh start && tail -f /dev/null"
+
+volumes:
+  file-storage-1-data:
+  file-storage-2-data:
+  backup-storage-data:

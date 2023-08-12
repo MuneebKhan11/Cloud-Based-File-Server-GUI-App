@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171"
+      fx:controller="com.example.demo.CreateNewFileController">
+    <Button fx:id="createNewFileButton" layoutX="10" layoutY="170" mnemonicParsing="false" onAction="#openCreateNewFileView" text="Create" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-padding: 10 20; -fx-font-size: 14px;"/>
+
+    <padding>
+
+        <Insets bottom="20" left="20" right="20" top="20"/>
+    </padding>
+    <Label text="Create New File"/>
+    <TextField fx:id="fileNameInput" promptText="Enter file name"/>
+    <TextArea fx:id="fileContentInput" prefHeight="200.0" prefWidth="300.0" promptText="Enter file content"/>
+    <HBox alignment="CENTER" spacing="10">
+        <Button text="Save" onAction="#saveFile"/>
+        <Button text="Back" onAction="#goBack"/>
+
+    </HBox>
+
+</VBox>
